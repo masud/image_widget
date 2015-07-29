@@ -41,8 +41,9 @@ class msd_image_upload_widget_plugin extends WP_Widget
          ?> 
          
          <div class="col-md-3">
-         <div class="sponsor-image_link"><h3><?php echo $instance['image_link'];?></h3></div>
-            <img src="<?php echo $instance['image'];?>" />
+            <div class="sponsor-image_link"><a href="<?php echo $instance['image_link'];?>">
+                <img src="<?php echo $instance['image'];?>" /></a>
+            </div>
          </div>
         
 
@@ -91,7 +92,7 @@ class msd_image_upload_widget_plugin extends WP_Widget
             <input class="msd_image_upload" type="button" value="Upload Image" />
 
            <!-- <input  name ="<?php echo $this->get_field_name( 'image' ); ?>" type="text" id="<?php echo $this->get_field_id( 'image' ); ?>" value="<?php echo esc_url( $image ); ?>" />
-           <a href="#" class="tx-open-widget-media button button-primary" >Image</a>
+           <a href="#" class="msd_image_upload button button-primary" >Image</a>
  -->
         </p>
     <?php
